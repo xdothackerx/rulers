@@ -18,8 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "rack"
+  spec.add_runtime_dependency "erubis"
+  spec.add_development_dependency "rack-test"
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 0"
-  spec.add_development_dependency "rackgem ins", "~> 0"
 
 end
